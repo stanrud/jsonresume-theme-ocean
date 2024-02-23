@@ -1,0 +1,33 @@
+{
+  "name": "jsonresume-theme-ocean",
+  "version": "0.0.7",
+  "description": "Classy theme for JSON Resume",
+  "author": "Stan Rud",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "resume",
+    "cv",
+    "handlebars",
+    "jsonresume",
+    "jsonresume-theme",
+    "jsonresume-theme-classy"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stanrud/jsonresume-theme-ocean"
+  },
+  "scripts": {
+    "serve": "resume serve --theme .  --resume ./test/fixture.resume.json",
+    "build:pdf": "resume export --theme . --resume ./test/fixture.resume.json resume.pdf",
+    "build:html": "resume export --theme . --resume ./test/fixture.resume.json resume.html"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "html-minifier": "^4.0.0",
+    "marked": "^11.1.1"
+  },
+  "devDependencies": {
+    "resume-cli": "^3.0.8"
+  }
+}
